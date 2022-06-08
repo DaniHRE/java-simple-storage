@@ -1,0 +1,5 @@
+# IGNORE FILES
+
+.idea
+EstoqueSenai.iml
+target/
