@@ -37,7 +37,7 @@ public class Estoque {
         JSONArray items = getAllItems();
         JSONObject wrapper = new JSONObject();
 
-        wrapper.put("login", item.name);
+        wrapper.put("name", item.name);
         wrapper.put("price", item.price);
         wrapper.put("description", item.description);
 

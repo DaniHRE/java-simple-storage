@@ -1,0 +1,31 @@
+Program Started at: | 07:46:42 BRT
+
+Open main menu | 07:46:42 BRT
+Opened storage submenu | 07:46:51 BRT
+
+Selected 'View All Users' | option1. | 07:46:52 BRT
+Closed 'View All Users' option.
+ | 07:46:53 BRT
+Opened storage submenu | 07:46:53 BRT
+Selected 'Delete Product' | option3. | 07:46:55 BRT
+Deleted Product | 07:46:56 BRT
+Closed 'Delete Product' option.
+ | 07:46:56 BRT
+Opened storage submenu | 07:46:56 BRT
+Selected 'Add Product' | option2. | 07:47:04 BRT
+Created a item in storage | 07:47:09 BRT
+Closed 'Add Product' option.
+ | 07:47:09 BRT
+Opened storage submenu | 07:47:09 BRT
+
+Selected 'View All Users' | option1. | 07:47:10 BRT
+Closed 'View All Users' option.
+ | 07:47:11 BRT
+Opened storage submenu | 07:47:11 BRT
+Selected 'Delete Product' | option3. | 07:47:13 BRT
+Deleted Product | 07:47:23 BRT
+Closed 'Delete Product' option.
+ | 07:47:23 BRT
+Opened storage submenu | 07:47:23 BRT
+Open main menu | 07:47:24 BRT
+Program Exited at:  | 07:47:25 BRT
