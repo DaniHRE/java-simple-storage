@@ -62,7 +62,7 @@ public class UserUtils {
             usersString += String.valueOf(i) + users.get(i) + "\n";
         }
 
-//      TENTA DELETAR O USUÁRIO A PARTIR DO INDEX
+//      TRY TO DELETE ITEM BY INDEX
         try {
             int userIndex = Integer.parseInt(JOptionPane.showInputDialog(null, usersString, "SYSTEM", JOptionPane.INFORMATION_MESSAGE));
             users.remove(userIndex);
@@ -70,7 +70,7 @@ public class UserUtils {
             e.printStackTrace();
         }
 
-//      TENTA ESCREVER OU SOBRE ESCREVER NO JSONArray
+//      TRY TO OVERWRITE USER JSONArray
         try (FileWriter file = new FileWriter("users.json")) {
             file.write(users.toJSONString());
             file.flush();

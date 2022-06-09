@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class Estoque {
 
-    //    READ USERS
+    //    READ ITEMS
     public static JSONArray getAllItems() {
         JSONParser jsonParser = new JSONParser();
         JSONArray storageItemsArr = new JSONArray();
@@ -32,7 +32,7 @@ public class Estoque {
         return storageItemsArr;
     }
 
-    //    CREATE USER
+    //    ADD ITEM
     public static void addItem(Item item) {
         JSONArray items = getAllItems();
         JSONObject wrapper = new JSONObject();
@@ -51,7 +51,7 @@ public class Estoque {
         }
     }
 
-    //    DELETE USER
+    //    DELETE ITEM
     public static void deleteItem() {
         JSONArray items = getAllItems();
         String itemsString = "Enter index you want to remove.\n";
@@ -60,7 +60,7 @@ public class Estoque {
             itemsString += String.valueOf(i) + items.get(i) + "\n";
         }
 
-//      TENTA DELETAR O USUÁRIO A PARTIR DO INDEX
+//      TRY TO DELETE ITEM BY INDEX
         try {
             int itemIndex = Integer.parseInt(JOptionPane.showInputDialog(null, itemsString, "SYSTEM", JOptionPane.INFORMATION_MESSAGE));
             items.remove(itemIndex);
@@ -68,7 +68,7 @@ public class Estoque {
             e.printStackTrace();
         }
 
-//      TENTA ESCREVER OU SOBRE ESCREVER NO JSONArray
+//      TRY TO OVERWRITE ITEM JSONArray
         try (FileWriter file = new FileWriter("storage.json")) {
             file.write(items.toJSONString());
             file.flush();
@@ -77,7 +77,7 @@ public class Estoque {
         }
     }
 
-    //    UPDATE USER
+    //    UPDATE ITEM
     public static void updateItem() {
         JSONArray items = getAllItems();
 
